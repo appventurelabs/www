@@ -4,13 +4,12 @@ import type {
   IFrontmatter,
 } from 'astro-boilerplate-components';
 import {
-  BlogGallery,
   NewerOlderPagination,
   PaginationHeader,
   Section,
 } from 'astro-boilerplate-components';
 
-import { CTA } from '@/partials/CTA';
+import { BlogGallery } from '@/components/BlogGallery';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
@@ -36,14 +35,14 @@ const titleSuffix = ` - ${AppConfig.site_name}`;
 const titleBase = `Blog page ${page.currentPage}`;
 const title = titleBase + titleSuffix;
 const description =
-  'Pagination example built with Astro styled with Tailwind CSS.';
+  'Written by our amazing team of world class experts in retail.';
 ---
 
 <Base head={{ title, description }}>
   <Section>
     <PaginationHeader
-      title='Random title here'
-      description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      title='Recent News and Articles'
+      description='Written by our amazing team of world class experts in retail.'
     />
   </Section>
 
@@ -54,6 +53,4 @@ const description =
   <Section>
     <NewerOlderPagination page={page} />
   </Section>
-
-  <CTA />
 </Base>

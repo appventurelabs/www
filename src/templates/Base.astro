@@ -15,7 +15,10 @@ const {
 } = Astro.props as Props;
 ---
 
-<html lang='en'>
+<html
+  lang='en'
+  style='background: rgb(39,29,59); background: linear-gradient(135deg, rgba(39,29,59,1) 0%, rgba(39,29,59,1) 56%, rgba(50,30,92,1) 100%);  height: auto; min-height: 100%; max-height: fit-content; background-repeat: none;'
+>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -26,7 +29,7 @@ const {
     <link rel='alternate' type='application/rss+xml' href='/rss.xml' />
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
   </head>
-  <body class='bg-slate-900 text-gray-100'>
+  <body class='text-gray-100'>
     <Navbar />
 
     <slot></slot>

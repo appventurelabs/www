@@ -1,10 +1,8 @@
 import type { MarkdownInstance } from 'astro';
-import type { IFrontmatter } from 'astro-boilerplate-components';
-import {
-  BlogGallery,
-  GradientText,
-  Section,
-} from 'astro-boilerplate-components';
+import { GradientText, Section } from 'astro-boilerplate-components';
+
+import { BlogGallery } from '@/components/BlogGallery';
+import type { IFrontmatter } from '@/types/IFrontMatter';
 
 type IRecentPostsProps = {
   postList: MarkdownInstance<IFrontmatter>[];
@@ -15,7 +13,7 @@ const RecentPosts = (props: IRecentPostsProps) => (
     title={
       <div className="flex items-baseline justify-between">
         <div>
-          Recent <GradientText>Posts</GradientText>
+          Recent <GradientText>Posts and Updates</GradientText>
         </div>
 
         <div className="text-sm">
