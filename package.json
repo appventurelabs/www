@@ -24,7 +24,7 @@
     "@types/react": "^18.0.12",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
-    "astro": "1.0.0-beta.44",
+    "astro": "1.7.2",
     "astro-eslint-parser": "^0.2.2",
     "astro-imagetools": "^0.6.10",
     "astro-robots-txt": "^0.3.2",
@@ -48,7 +48,7 @@
     "tailwindcss": "^3.0.24"
   },
   "dependencies": {
-    "astro-boilerplate-components": "^1.0.8",
+    "astro-boilerplate-components": "^1.0.10",
     "date-fns": "^2.28.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
